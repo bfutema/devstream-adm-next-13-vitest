@@ -33,6 +33,7 @@
     "vitest"
   ],
   "rules": {
+    "curly": "error",
     "indent": [
       "error",
       2
@@ -77,6 +78,7 @@
       "error",
       "unix"
     ],
+    "no-return-await": "error",
     "prettier/prettier": [
       "error",
       {
@@ -93,6 +95,13 @@
       "error",
       "single"
     ],
+    "react/jsx-newline": [
+      "error",
+      {
+        "prevent": false
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": [
       "warn",
