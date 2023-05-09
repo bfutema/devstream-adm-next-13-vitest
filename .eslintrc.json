@@ -124,8 +124,8 @@
       "always"
     ],
     "sonarjs/no-duplicates-string": "off",
-    "sonarjs/cognitive-complexity": ["error", 10],
-    "sonarjs/elseif-without-else": "error",
+    "sonarjs/cognitive-complexity": "off",
+    "sonarjs/elseif-without-else": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
@@ -140,6 +140,9 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "jest": {
+      "version": 29.5
     }
   }
 }
