@@ -10,6 +10,7 @@
     "plugin:jest/recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:vitest/recommended"
   ],
   "overrides": [
@@ -26,6 +27,7 @@
     "jsx-a11y",
     "prettier",
     "react",
+    "react-hooks",
     "security",
     "unused-imports",
     "vitest"
@@ -90,6 +92,13 @@
     "quotes": [
       "error",
       "single"
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "enableDangerousAutofixThisMayCauseInfiniteLoops": true
+      }
     ],
     "security/detect-buffer-noassert": "error",
     "security/detect-child-process": "error",
