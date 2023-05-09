@@ -1,9 +1,13 @@
 import React from 'react';
 
-export const Button: React.FC = () => {
+interface ButtonProps {
+  isLoading?: boolean;
+}
+
+export const Button: React.FC<ButtonProps> = ({ isLoading }) => {
   return (
     <div data-testid="button-container">
-      <p>Button</p>
+      {isLoading ? <p>Carregando</p> : <p>Button</p>}
     </div>
   );
 };
