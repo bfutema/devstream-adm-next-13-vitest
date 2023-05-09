@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "lint:ts": "tsc --noEmit",
     "lint:es": "eslint ./src/**/*.{ts,tsx}"
   },
   "devDependencies": {
