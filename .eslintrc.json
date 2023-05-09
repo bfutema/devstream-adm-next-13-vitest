@@ -20,7 +20,8 @@
     "react",
     "@typescript-eslint",
     "prettier",
-    "import-helpers"
+    "import-helpers",
+    "unused-imports"
   ],
   "rules": {
     "indent": [
@@ -66,6 +67,16 @@
     "semi": [
       "error",
       "always"
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
     ]
   },
   "settings": {
