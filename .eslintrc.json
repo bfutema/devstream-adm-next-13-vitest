@@ -19,12 +19,29 @@
   "plugins": [
     "react",
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "import-helpers"
   ],
   "rules": {
     "indent": [
       "error",
       2
+    ],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          "/^react/",
+          "module",
+          ["parent", "sibling", "index"],
+          "/.styles/"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
     ],
     "linebreak-style": [
       "error",
