@@ -1,0 +1,10 @@
+{
+  "bumpFiles": [
+    {
+      "filename": "package.json",
+      "type": "json"
+    }
+  ],
+  "commitAll": true,
+  "header": "# Change Log"
+}

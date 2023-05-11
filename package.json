@@ -1,9 +1,10 @@
 {
   "name": "devstream-adm-next-13-vitest",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -16,7 +17,7 @@
     "test:staged": "vitest --run --bail 0",
     "test:coverage": "vitest --coverage",
     "test:ui:coverage": "vitest --ui --api 5000 --coverage",
-    "prepare": "husky install"
+    "release": "standard-version"
   },
   "dependencies": {
     "next": "13.4.1",
@@ -54,6 +55,7 @@
     "jsdom": "22.0.0",
     "lint-staged": "13.2.2",
     "prettier": "2.8.8",
+    "standard-version": "9.5.0",
     "typescript": "5.0.4",
     "vitest": "0.31.0"
   },
