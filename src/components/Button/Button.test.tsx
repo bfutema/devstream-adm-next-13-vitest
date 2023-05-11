@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 
-import { Button } from './Button';
+import { Button, ButtonProps } from './Button';
 
-const makeSut = (props?: { isLoading?: boolean }) => {
-  const sut = <Button isLoading={props?.isLoading} />;
+const makeSut = (props?: ButtonProps) => {
+  const sut = <Button {...props} />;
 
   return { sut };
 };
