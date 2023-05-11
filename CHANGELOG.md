@@ -1,4 +1,11 @@
 # Change Log
+### [0.0.3](https://github.com/bfutema/devstream-adm-next-13-vitest/compare/v0.0.2...v0.0.3) (2023-05-11)
+
+
+### Features
+
+* :sparkles: add more one button feature ([a7e6dc9](https://github.com/bfutema/devstream-adm-next-13-vitest/commit/a7e6dc992478282e706393edee19d0438ddc184e))
+
 ### [0.0.2](https://github.com/bfutema/devstream-adm-next-13-vitest/compare/v0.0.1...v0.0.2) (2023-05-11)
 
 
