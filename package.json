@@ -10,8 +10,10 @@
     "lint": "next lint",
     "lint:ts": "tsc --noEmit",
     "lint:es": "eslint ./src/**/*.{ts,tsx}",
+    "lint-staged": "lint-staged",
     "test": "vitest",
     "test:ui": "vitest --ui --api 5000",
+    "test:staged": "vitest --run --bail 0",
     "test:coverage": "vitest --coverage",
     "test:ui:coverage": "vitest --ui --api 5000 --coverage",
     "prepare": "husky install"
@@ -48,6 +50,7 @@
     "eslint-plugin-vitest": "0.2.2",
     "husky": "8.0.3",
     "jsdom": "22.0.0",
+    "lint-staged": "13.2.2",
     "prettier": "2.8.8",
     "typescript": "5.0.4",
     "vitest": "0.31.0"
