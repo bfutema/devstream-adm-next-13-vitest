@@ -3,6 +3,7 @@
 **/*.d.ts
 **/*.hbs
 .lintstagedrc.json
+.versionrc.json
 node_modules
 build
 package.json
