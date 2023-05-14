@@ -1,11 +1,18 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
 
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { URL, fileURLToPath } from 'url';
+import { defineConfig } from 'vite';
+import { configDefaults } from 'vitest/config';
 
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
   test: {
     environment: 'jsdom',
     globals: true,
@@ -15,6 +22,9 @@ export default defineConfig({
       branches: 100,
       functions: 100,
       lines: 100,
+      exclude: ['**/mocks/**'],
     },
+    include: ['./src/**/*.{test,spec}.{ts,tsx}'],
+    exclude: [...configDefaults.exclude, '**/mocks/**'],
   },
 });
